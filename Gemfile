@@ -14,8 +14,12 @@ gem 'kramdown',                '1.12.0'
 gem 'pry'
 
 group :development, :test do
-  gem 'sqlite3', '1.3.13'
   gem 'byebug',  '9.0.0', platform: :mri
+  gem 'capistrano', '~> 3.4'
+  gem 'capistrano-bundler', '~> 1.1', '>= 1.1.4'
+  gem 'capistrano-rails', '~> 1.1', '>= 1.1.6'
+  gem 'capistrano-rbenv', '~> 2.0', '>= 2.0.4'
+  gem 'capistrano3-puma'
 end
 
 group :development do
